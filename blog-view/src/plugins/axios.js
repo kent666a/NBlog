@@ -3,7 +3,8 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
 const request = axios.create({
-	baseURL: 'http://localhost:8090/',
+	// baseURL: 'https://blog.mufanlife.cn/api', // url = base url + request url
+	baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
 	timeout: 10000,
 })
 
